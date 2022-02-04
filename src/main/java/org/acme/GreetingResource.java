@@ -61,6 +61,7 @@ public class GreetingResource {
     public List<String> list(){
         System.out.println("changes from local");
         System.out.println("changes from remote");
+        System.out.println("changes from remote 2");
         return listOfGreetings;
     }
 }
