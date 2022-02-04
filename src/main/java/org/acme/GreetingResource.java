@@ -59,9 +59,8 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/greetings/list")
     public List<String> list(){
-        System.out.println("changes from local");
-        System.out.println("changes from remote");
-        System.out.println("changes from remote 2");
-        return listOfGreetings;
+       System.out.println("changes from local");
+       System.out.println("changes from local 2");
+    return listOfGreetings;
     }
 }
