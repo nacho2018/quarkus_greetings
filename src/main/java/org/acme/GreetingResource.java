@@ -59,7 +59,6 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/greetings/list")
     public List<String> list(){
-        System.out.println("Returning the list of greetings");
         return listOfGreetings;
     }
 }
