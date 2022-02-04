@@ -60,6 +60,7 @@ public class GreetingResource {
     @Path("/greetings/list")
     public List<String> list(){
         System.out.println("changes from local");
+        System.out.println("changes from remote");
         return listOfGreetings;
     }
 }
