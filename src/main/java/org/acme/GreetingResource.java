@@ -62,4 +62,11 @@ public class GreetingResource {
         return listOfGreetings;
 
     }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/chain/greetings")
+    public String getGreetingsAsAChain(){
+        return service.getGreetingChain();
+    }
 }
